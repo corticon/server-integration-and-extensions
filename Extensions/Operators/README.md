@@ -41,6 +41,21 @@
     *   [MathOperators](#mathoperators)
         *   [getCircumference](#getcircumference)
         *   [getFarenheight](#getfarenheight)
+        *   [abs](#abs)
+        *   [acos](#acos)
+        *   [asin](#asin)
+        *   [atan](#atan)
+        *   [cbrt](#cbrt)
+        *   [ceil](#ceil)
+        *   [cos](#cos)
+        *   [cosh](#cosh)
+        *   [exp](#exp)
+        *   [expm1](#expm1)
+        *   [floor](#floor)
+        *   [exponent](#exponent)
+        *   [loge](#loge)
+        *   [log10](#log10)
+        *   [log1p](#log1p)
 
 # How to create custom extended operators
 
@@ -356,4 +371,169 @@ getCircumference(radius)
 **Usage:**
 ```
 getFarenheight(centigrade)
+```
+
+### abs
+
+**Description:** Returns the absolute value of a decimal value.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+abs(n)
+```
+
+### acos
+
+**Description:** Returns the arc cosine of a value; the returned angle is in the range 0.0 through pi.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+acos(n)
+```
+
+### asin
+
+**Description:** Returns the arc sine of a value; the returned angle is in the range -pi/2 through pi/2.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+asin(n)
+```
+
+### atan
+
+**Description:** Returns the arc tangent of a value; the returned angle is in the range -pi/2 through pi/2.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+atan(n)
+```
+
+### cbrt
+
+**Description:** Returns the cube root of a double value.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+cbrt(n)
+```
+
+### ceil
+
+**Description:** Returns the smallest (closest to negative infinity) double value that is greater than or equal to the argument and is equal to a mathematical integer.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+ceil(n)
+```
+
+### cos
+
+**Description:** Returns the trigonometric cosine of an angle.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+cos(n)
+```
+
+### cosh
+
+**Description:** Returns the hyperbolic cosine of a double value.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+cosh(n)
+```
+
+### exp
+
+**Description:** Returns Euler's number e raised to the power of a double value.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+exp(n)
+```
+
+### expm1
+
+**Description:** Returns ex -1.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+expm1(n)
+```
+
+### floor
+
+**Description:** Returns the largest (closest to positive infinity) double value that is less than or equal to the argument and is equal to a mathematical integer.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+floor(n)
+```
+
+### exponent
+
+**Description:** Returns the unbiased exponent used in the representation of a double.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+exponent(n)
+```
+
+### loge
+
+**Description:** Returns the natural logarithm (base e) of a double value.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+loge(n)
+```
+
+### log10
+
+**Description:** Returns the base 10 logarithm of a double value.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+log10(n)
+```
+
+### log1p
+
+**Description:** Returns the natural logarithm of the sum of the argument and 1.
+
+**Source:** [MathOperators.java](MathOperators.java)
+
+**Usage:**
+```
+log1p(n)
 ```
