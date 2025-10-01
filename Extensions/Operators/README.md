@@ -5,7 +5,7 @@
     *   [How to deploy Decision Services with extensions](#how-to-deploy-decision-services-with-extensions)
     *   [Deployment from Studio](#deployment-from-studio)
     *   [Deployment using the Server's command line interface](#deployment-using-the-servers-command-line-interface)
-*   [Available Operators](#available-operators)
+*   [Sample Operators](#available-operators)
     *   [AttributeOperators](#attributeoperators)
         *   [isLeapYear](#isleapyear)
         *   [replaceAll](#replaceall)
