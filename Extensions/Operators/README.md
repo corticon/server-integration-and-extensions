@@ -24,6 +24,8 @@
         *   [compareWithLevenshtein](#comparewithlevenshtein)
         *   [compareWithNgram](#comparewithngram)
         *   [compareWithTokenization](#comparewithtokenization)
+    *   [PerformanceOperators](#performanceoperators)
+        *   [getNanoTimeMillis](#getnanotimemillis)
 
 # How to create custom extended operators
 
@@ -713,4 +715,29 @@ public static BigDecimal compareWithTokenization(
 **Usage:**
 ```
 compareWithTokenization("string1", "string2")
+```
+
+## PerformanceOperators
+
+### getNanoTimeMillis
+
+**Description:** Returns a timestamp in milliseconds allowing to gather performance metrics in a rulesheet.
+
+**Code:**
+```java
+@OperatorFolder(lang = { "en" }, values = { "Performance Metrics" })
+@Description(lang = { "en" }, values = { "Returns a timestamp in milliseconds allowing to gather performance metrics in a rulesheet" })
+public static BigInteger getNanoTimeMillis() {
+    try {
+         long timeInMilliSeconds = ((System.nanoTime() / 1000000)); 
+         return BigInteger.valueOf(timeInMilliSeconds);
+    } catch (Exception e) {
+        return BigInteger.ZERO;
+    }
+}
+```
+
+**Usage:**
+```
+getNanoTimeMillis()
 ```

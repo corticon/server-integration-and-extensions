@@ -6,6 +6,8 @@ package com.corticon.samples.extensions;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import com.corticon.services.extensions.ArgumentName;
 import com.corticon.services.extensions.Description;
@@ -71,5 +73,14 @@ public class AttributeOperators implements ICcStringExtension, ICcDateTimeExtens
 
 		String r = s.replaceAll(searchString, replacement);
 		return r;
+	}
+
+	@OperatorFolder(lang = { "en" }, values = { "String" })
+	@Description(lang = { "en" }, values = { "Returns true if the input string matches the supplied regular expression." })
+	public static Boolean regex(String strInput, @ArgumentName(lang = { "en" }, values = { "Regular expression" }) String strPattern){
+		String patternStr = strPattern; 
+		Pattern pattern = Pattern.compile(patternStr); 
+		Matcher matcher = pattern.matcher(strInput); 
+		return new Boolean(matcher.matches());
 	}
 }
